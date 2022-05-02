@@ -7,15 +7,19 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Дайджест Дайджест DTF.ru</title>
 </head>
-<body class="bg-slate-50">
+<body id="body" class="bg-slate-50">
 
-  <div class="max-w-screen-md bg-white p-12 m-12 mx-auto rounded-xl shadow-lg">
-    <h1 class="text-3xl font-bold text-slate-500 mb-4">Дайджест DTF.ru</h1>
+  <div id="content-block" class="max-w-screen-md bg-white p-12 m-12 mx-auto rounded-xl shadow-lg">
+    <div class="flex flex-row items-center justify-between mb-8">
+      <h1 class="text-3xl font-bold text-slate-500">Дайджест DTF.ru</h1>
+      <p id="darkmode" class="cursor-pointer text text-slate-500 border rounded py-1 px-2">тёмная тема 😏</p>
+      <p id="lightmode" class="hidden cursor-pointer text text-slate-500 border border-slate-500 rounded py-1 px-2">светлая тема 😒</p>
+    </div>
 
       <form class="flex flex-wrap">
 
         <div class="basis-full sm:basis-1/2">
-          <h3 class="text-lg text-slate-600 mb-2">Что хочешь увидеть?</h3>
+          <h3 class="text-lg text-slate-500 mb-2">Что хочешь увидеть?</h3>
 
           <div class="flex flex-col mb-4 text-slate-500">
             <label>
@@ -56,7 +60,7 @@
         </div>
 
         <div class="basis-full sm:basis-1/2">
-          <h3 class="text-lg text-slate-600 mb-2">Сколько записей показать?</h3>
+          <h3 class="text-lg text-slate-500 mb-2">Сколько записей показать?</h3>
 
           <input class="text-base border rounded p-2 mr-2 mb-6"
             id="amount"

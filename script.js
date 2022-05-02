@@ -43,7 +43,7 @@ document.getElementById('fetch-button').addEventListener('click', async function
         } else {
           h4.appendChild(document.createTextNode('Без подсайта 😒'));
         }
-        h4.className = 'text-lg text-slate-600 mb-4 grow';
+        h4.className = 'text-lg text-slate-500 mb-4 grow';
         divHeader.appendChild(h4);
         div.appendChild(divHeader);
 
@@ -53,7 +53,7 @@ document.getElementById('fetch-button').addEventListener('click', async function
         } else {
           h4.appendChild(document.createTextNode('В записи нет заголовка 😒'));
         }
-        h4.className = 'text-lg text-slate-600 mb-4 grow';
+        h4.className = 'text-lg text-slate-500 mb-4 grow';
         divHeader.appendChild(h4);
         div.appendChild(divHeader);
 
@@ -93,4 +93,24 @@ document.getElementById('fetch-button').addEventListener('click', async function
       divResult.innerHTML =
         '<p class="mt-4 text-slate-500">К сожалению, произошла какая-то ошибка. Попробуйте запросить данные ещё раз.</p>';
     });
+});
+
+document.getElementById('lightmode').addEventListener('click', function () {
+  document.getElementById('lightmode').classList.add('hidden');
+  document.getElementById('darkmode').classList.remove('hidden');
+  document.getElementById('body').classList.remove('bg-gray-900');
+  document.getElementById('content-block').classList.remove('bg-gray-800');
+  document
+    .getElementById('amount')
+    .classList.remove('bg-gray-800', 'text-slate-300', 'border-slate-500');
+});
+
+document.getElementById('darkmode').addEventListener('click', function () {
+  document.getElementById('darkmode').classList.add('hidden');
+  document.getElementById('lightmode').classList.remove('hidden');
+  document.getElementById('body').classList.add('bg-gray-900');
+  document.getElementById('content-block').classList.add('bg-gray-800');
+  document
+    .getElementById('amount')
+    .classList.add('bg-gray-800', 'text-slate-300', 'border-slate-500');
 });
