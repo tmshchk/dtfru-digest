@@ -1,6 +1,6 @@
 # Дайджест популярных новостей DTF.ru
 
-[Попробовать вживую на GitHub Pages](https://tmshchk.github.io/dtf.ru-digest/)
+[Попробовать вживую на GitHub Pages](https://tmshchk.github.io/dtfru-digest/)
 
 Это мини-приложение выводит N записей с сайта DTF.ru
 
